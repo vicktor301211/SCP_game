@@ -1,13 +1,16 @@
 class Foundation:
-    def __init__(self, canvas, x, y, hp, xp, mentality_health, color):
+    def __init__(self, canvas, x, y, hp, xp, mentality_health, fraction):
         self.hp = hp
         self.xp = xp
         self.mentality_health = mentality_health
         self.canvas = canvas
         self.x = x
         self.y = y
-        self.color = color
+        self.fraction = fraction
         self.create()
 
     def create(self):
-        self.chel = self.canvas.create_rectangle(self.x, self.y, self.x + 50, self.y + 50, fill=self.color)
+        if self.fraction == 'scientist':
+            self.scientist = self.canvas.create_rectangle(self.x, self.y, self.x + 50, self.y + 50, fill='yellow')
+        elif self.fraction == 'security':
+            self.security = self.canvas.create_rectangle(self.x, self.y, self.x + 50, self.y + 50, fill='gray')
