@@ -9,4 +9,4 @@ class SCPs:
         if self.fraction == '173':
             self.scp173 = self.canvas.create_rectangle(self.x, self.y, self.x + 50, self.y + 50, fill='red')
         if self.fraction == '106':
-            self.scp106 = self.canvas.create_rectangle(self.x, self.y, self.x + 50, self.y + 50, fill='black')
+            self.scp106 = self.canvas.create_rectangle(self.x, self.y, self.x + 50, self.y + 50, fill='#263238')
