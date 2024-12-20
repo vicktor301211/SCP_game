@@ -1,3 +1,4 @@
+import random
 class Wall:
     def __init__(self, canvas, x, y, width, height, color):
         self.canvas = canvas
